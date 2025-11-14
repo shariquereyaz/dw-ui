@@ -15,7 +15,7 @@
   },
   {
     "id": 2,
-    "name": "Spice Villa",
+    "name": "Spice Dental",
     "speciality": "Braces",
     "rating": 4.0,
     "treatmentTypes": ["Veneers / Smile Design", "Braces"],
@@ -29,7 +29,7 @@
   },
   {
     "id": 3,
-    "name": "Taco House",
+    "name": "Taco Dental",
     "speciality": "Dentures",
     "rating": 4.7,
     "treatmentTypes": ["Dentures", "Dental Implants"],
@@ -43,7 +43,7 @@
   },
   {
     "id": 4,
-    "name": "Dosa Corner",
+    "name": "Dosa Dental",
     "speciality": "Root Canal Treatment",
     "rating": 4.3,
     "treatmentTypes": ["Full Mouth Rehabilitation", "Wisdom Tooth Removal", "Root Canal Treatment"],
@@ -57,7 +57,7 @@
   },
   {
     "id": 5,
-    "name": "Burger Zone",
+    "name": "Dental Zone",
     "speciality": "Tooth Filling",
     "rating": 4.1,
     "treatmentTypes": ["Clear Aligners", "Crown & Bridge", "Tooth Filling"],
@@ -71,7 +71,7 @@
   },
   {
     "id": 6,
-    "name": "The Sweet Spot",
+    "name": "The Sweet Tooth",
     "speciality": "Dental Check-up",
     "rating": 4.6,
     "treatmentTypes": ["Wisdom Tooth Removal", "Dental Check-up"],
