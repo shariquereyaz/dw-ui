@@ -1,0 +1,97 @@
+/* -------------------------------------- */
+/*  DARK MODE THEME USING CSS VARIABLES   */
+/* -------------------------------------- */
+
+:root {
+  --bg-color: #f8f9fa;
+  --text-color: #222;
+  --card-bg: #ffffff;
+  --border-color: #e3e3e3;
+  --muted-text: #666;
+}
+
+.dark-mode {
+  --bg-color: #0d1117;
+  --text-color: #e6edf3;
+  --card-bg: #161b22;
+  --border-color: #2d333b;
+  --muted-text: #9ba1a6;
+}
+
+/* Global */
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.3s ease background, 0.3s ease color;
+}
+
+/* Card styling */
+.restaurant-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  transition: 0.3s ease background, 0.3s ease border-color;
+}
+
+/* Restaurant image */
+.restaurant-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Text colors inside card */
+.restaurant-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.restaurant-cuisine {
+  font-size: 14px;
+  color: var(--muted-text);
+}
+
+.restaurant-meta {
+  font-size: 14px;
+  color: var(--muted-text);
+}
+
+/* Buttons */
+.btn-primary {
+  background: #2f81f7;
+  border: none;
+}
+
+.dark-mode .btn-primary {
+  background: #388bfd;
+}
+
+/* Details & Navigate buttons */
+.btn-outline-light {
+  border-color: var(--text-color);
+  color: var(--text-color);
+}
+
+.dark-mode .btn-outline-light:hover {
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+
+/* Bootstrap card fixes */
+.card {
+  background: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-color) !important;
+}
+
+.dark-mode .modal-content {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
