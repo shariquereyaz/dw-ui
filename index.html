@@ -52,7 +52,7 @@
       return (
         <nav className={`navbar navbar-expand-lg ${dark ? 'navbar-dark bg-dark' : 'navbar-light bg-light'}`}>
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">Dentistwalla </a>
+            <a className="navbar-brand" href="#"> Dentistwalla</a>
 
             <div className="d-flex align-items-center">
               <button id="locBtn" className="btn btn-outline-primary btn-sm me-2">Use my location</button>
@@ -80,16 +80,27 @@
         <div className="card mb-3">
           <div className="card-body">
             <div className="row g-2 align-items-center">
-              <div className="col-12 col-md-4">
-                <input
-                  className="form-control"
-                  placeholder="Search Clinic..."
-                  value={search}
-                  onChange={(e) => setSearch(e.target.value)}
-                />
-              </div>
+                <div className="col-12 col-md-4 position-relative">
+  <input
+    className="form-control pe-5"
+    placeholder="Search Clinic/Area/Treatment..."
+    value={search}
+    onChange={(e) => setSearch(e.target.value)}
+  />
 
-              <div className="col-6 col-md-2">
+  {search && (
+    <button
+      className="btn btn-sm btn-link text-secondary position-absolute end-0 top-50 translate-middle-y me-2 p-0"
+      onClick={resetFilters}
+      style={{ textDecoration: "none" }}
+    >
+      ✖
+    </button>
+  )}
+</div>
+
+
+            {/*  <div className="col-6 col-md-2">
                 <select className="form-select" value={minRating} onChange={(e) => setMinRating(e.target.value)}>
                   <option value="">Rating any</option>
                   <option value="4">4.0+</option>
@@ -121,17 +132,18 @@
                   <option value="name">Sort: Name A→Z</option>
                 </select>
               </div>
-
-              <div className="col-6 col-md-2 text-end">
+*/}
+      {/*        <div className="col-6 col-md-2 text-end">
                 <button className="btn btn-sm btn-outline-secondary" onClick={resetFilters}>Reset</button>
               </div>
-
+      */}        
+{/*
               <div className="col-12 mt-3">
                 <label className="form-label">Max distance: <strong>{maxDistance} km</strong></label>
                 <input type="range" min="1" max="50" value={maxDistance}
                   className="form-range" onChange={(e) => setMaxDistance(Number(e.target.value))} />
               </div>
-
+*/}
             </div>
           </div>
         </div>
@@ -340,7 +352,7 @@
             <div class="col-md-7">
               <p><strong>Rating:</strong> ⭐ ${r.rating}</p>
               <p><strong>Price:</strong> ${r.priceLevel}</p>
-              <p><strong>Meals:</strong> ${r.treatmentTypes.join(', ')}</p>
+              <p><strong>Treatments:</strong> ${r.treatmentTypes.join(', ')}</p>
               <p><strong>Speciality:</strong> ${r.speciality || '—'}</p>
               <p><strong>Distance:</strong> ${r.distance != null ? r.distance + ' km' : '—'}</p>
               <p>${r.description || ''}</p>
@@ -379,9 +391,11 @@
                 ))}
               </div>
 
-              <div className="col-md-6">
-             
+        {/*     <div className="col-md-6">
+                <h5 className="mb-3">Map</h5>
+                <MapView Clinics={sorted} userLocation={userLocation} highlightId={highlightId} />
               </div>
+        */}       
             </div>
           </div>
 
@@ -394,4 +408,5 @@
 
   </script>
 </body>
-</html>
+</html>
+
