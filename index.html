@@ -241,7 +241,9 @@
     }
 
     /* ---------- Main App ---------- */
+    
     function App() {
+      const [fabOpen, setFabOpen] = useState(false);
       const [Clinics, setClinics] = useState([]);
       const [search, setSearch] = useState('');
       const [minRating, setMinRating] = useState('');
@@ -398,6 +400,17 @@
         */}       
             </div>
           </div>
+          <div className={`fab-wrapper ${fabOpen ? 'open' : ''}`}>
+  <button className="fab-main" onClick={() => setFabOpen(o => !o)}>
+    {fabOpen ? "✖" : "☰"}
+  </button>
+
+  <div className="fab-menu">
+    <button className="fab-item" onClick={() => alert('About Us clicked')}>ℹ About Us</button>
+    <button className="fab-item" onClick={() => alert('Treatments clicked')}>🦷 Treatments</button>
+    <button className="fab-item" onClick={() => alert('Contact clicked')}>📞 Contact</button>
+  </div>
+</div>
 
           <DetailsModal />
         </div>
@@ -409,4 +422,3 @@
   </script>
 </body>
 </html>
-
