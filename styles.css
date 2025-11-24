@@ -94,4 +94,49 @@ body {
   background: var(--card-bg);
   color: var(--text-color);
   border-color: var(--border-color);
-}
+}
+/*FAB*/
+.fab-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2000;
+}
+
+.fab-main {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,.3);
+}
+
+.fab-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  bottom: 70px; /* ⬆ above FAB */
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s;
+}
+
+.fab-wrapper.open .fab-menu {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.fab-item {
+  padding: 10px 15px;
+  border-radius: 40px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 3px 8px rgba(0,0,0,.2);
+  background: white;
+}
