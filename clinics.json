@@ -9,7 +9,7 @@
     "lat": 25.6100,
     "lng": 85.1400,
     "address": "Patna, Bihar",
-    "phone": "+91-612-0000001",
+    "phone": "",
     "img": "https://picsum.photos/200",
     "description": "Best Clinic in Patna."
   },
@@ -23,7 +23,7 @@
     "lat": 25.6150,
     "lng": 85.1450,
     "address": "K E Inter College,Kashipur,Samastipur",
-    "phone": "+91-612-0000002",
+    "phone": "",
     "img": "https://picsum.photos/200",
     "description": "Best Clinic in Samastipur."
   },
@@ -37,7 +37,7 @@
     "lat": 25.6030,
     "lng": 85.1300,
     "address": "Opposite bhawani ultrasound Banaras bank chowk Chandwara Muzaffarpur 842001",
-    "phone": "+91-612-0000003",
+    "phone": "",
     "img": "https://picsum.photos/200",
     "description": "Best Clinic in Muzaffarpur."
   },
@@ -51,7 +51,7 @@
     "lat": 25.6000,
     "lng": 85.1380,
     "address": "Near Phulwari Block Main Gate, Main Road, Phulwarisharif, Patna-801505",
-    "phone": "+91-612-0000004",
+    "phone": "",
     "img": "https://picsum.photos/200",
     "description": "Best Clinic in Phulwarisharif."
   },
@@ -65,7 +65,7 @@
     "lat": 25.6115,
     "lng": 85.1250,
     "address": "Abdi Complex, Naka No 5,Darbhanga 846004",
-    "phone": "+91-612-0000005",
+    "phone": "",
     "img": "https://picsum.photos/200",
     "description": "Best Clinic in Darbhanga."
   }
