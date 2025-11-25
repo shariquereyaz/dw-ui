@@ -60,7 +60,7 @@
     "name": "National Dental Hospital",
     "speciality": "Tooth Filling",
     "rating": 4.1,
-    "treatmentTypes": ["Clear Aligners", "Crown & Bridge", "Tooth Filling"],
+    "treatmentTypes": ["All Dental and Aesthetic treatments"],
     "priceLevel": "₹₹",
     "lat": 25.6115,
     "lng": 85.1250,
