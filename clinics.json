@@ -7,7 +7,7 @@
     "treatmentTypes": ["Pediatric Dentistry", "Gum Treatment"],
     "priceLevel": "₹₹",
     "lat": 25.6100,
-    "lng": 88.1400,
+    "lng": 85.1400,
     "address": "Patna, Bihar",
     "phone": "+91-612-0000001",
     "img": "https://picsum.photos/200",
@@ -15,72 +15,58 @@
   },
   {
     "id": 2,
-    "name": "Spice Dental",
+    "name": "City Dental Care",
     "speciality": "Braces",
     "rating": 4.0,
     "treatmentTypes": ["Veneers / Smile Design", "Braces"],
     "priceLevel": "₹₹₹",
     "lat": 25.6150,
     "lng": 85.1450,
-    "address": "Dak Bungalow Road, Patna",
+    "address": "K E Inter College,Kashipur,Samastipur",
     "phone": "+91-612-0000002",
     "img": "https://picsum.photos/200",
-    "description": "Best Clinic in Patna."
+    "description": "Best Clinic in Samastipur."
   },
   {
     "id": 3,
-    "name": "Taco Dental",
+    "name": "S M dental clinic and braces",
     "speciality": "Dentures",
     "rating": 4.7,
     "treatmentTypes": ["Dentures", "Dental Implants"],
     "priceLevel": "₹₹",
     "lat": 25.6030,
     "lng": 85.1300,
-    "address": "Kankarbagh, Patna",
+    "address": "Opposite bhawani ultrasound Banaras bank chowk Chandwara Muzaffarpur 842001",
     "phone": "+91-612-0000003",
     "img": "https://picsum.photos/200",
-    "description": "Best Clinic in Patna."
+    "description": "Best Clinic in Muzaffarpur."
   },
   {
     "id": 4,
-    "name": "Dosa Dental",
+    "name": "1 Stop Dental and Aesthetic Clinic",
     "speciality": "Root Canal Treatment",
     "rating": 4.3,
     "treatmentTypes": ["Full Mouth Rehabilitation", "Wisdom Tooth Removal", "Root Canal Treatment"],
     "priceLevel": "₹",
-    "lat": 23.4012,
-    "lng": 88.371,
-    "address": "Rajendra Nagar, Patna",
+    "lat": 25.6000,
+    "lng": 85.1380,
+    "address": "Near Phulwari Block Main Gate, Main Road, Phulwarisharif, Patna-801505",
     "phone": "+91-612-0000004",
     "img": "https://picsum.photos/200",
-    "description": "Best Clinic in Patna."
+    "description": "Best Clinic in Phulwarisharif."
   },
   {
     "id": 5,
-    "name": "Dental Zone",
+    "name": "National Dental Hospital",
     "speciality": "Tooth Filling",
     "rating": 4.1,
     "treatmentTypes": ["Clear Aligners", "Crown & Bridge", "Tooth Filling"],
     "priceLevel": "₹₹",
     "lat": 25.6115,
     "lng": 85.1250,
-    "address": "Boring Road, Patna",
+    "address": "Abdi Complex, Naka No 5,Darbhanga 846004",
     "phone": "+91-612-0000005",
     "img": "https://picsum.photos/200",
-    "description": "Best Clinic in Patna."
-  },
-  {
-    "id": 6,
-    "name": "The Sweet Tooth",
-    "speciality": "Dental Check-up",
-    "rating": 4.6,
-    "treatmentTypes": ["Wisdom Tooth Removal", "Dental Check-up"],
-    "priceLevel": "₹",
-    "lat": 25.6170,
-    "lng": 85.1350,
-    "address": "Kumhrar, Patna",
-    "phone": "+91-612-0000006",
-    "img": "https://picsum.photos/200",
-    "description": "Best Clinic in Patna."
+    "description": "Best Clinic in Darbhanga."
   }
-]
+]
