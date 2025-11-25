@@ -46,7 +46,7 @@
     "name": "1 Stop Dental and Aesthetic Clinic",
     "speciality": "Root Canal Treatment",
     "rating": 4.3,
-    "treatmentTypes": ["Full Mouth Rehabilitation", "Wisdom Tooth Removal", "Root Canal Treatment"],
+    "treatmentTypes": ["All Dental and Aesthetic treatments"],
     "priceLevel": "₹",
     "lat": 25.6000,
     "lng": 85.1380,
