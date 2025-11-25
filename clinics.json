@@ -4,7 +4,7 @@
     "name": "Shaheen Dental Care",
     "speciality": "Gum Treatment",
     "rating": 5,
-    "treatmentTypes": ["Pediatric Dentistry", "Gum Treatment"],
+    "treatmentTypes": ["All Dental and Aesthetic treatments"],
     "priceLevel": "₹₹",
     "lat": 25.6100,
     "lng": 85.1400,
