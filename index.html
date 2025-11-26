@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Dentistwalla</title>
 
@@ -94,7 +94,7 @@
       onClick={resetFilters}
       style={{ textDecoration: "none" }}
     >
-      âœ–
+      ✖
     </button>
   )}
 </div>
@@ -127,9 +127,9 @@
               <div className="col-6 col-md-2">
                 <select className="form-select" value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
                   <option value="best">Sort: Best match</option>
-                  <option value="rating">Sort: Rating â†“</option>
-                  <option value="distance">Sort: Distance â†‘</option>
-                  <option value="name">Sort: Name Aâ†’Z</option>
+                  <option value="rating">Sort: Rating ↓</option>
+                  <option value="distance">Sort: Distance ↑</option>
+                  <option value="name">Sort: Name A→Z</option>
                 </select>
               </div>
 */}
@@ -162,8 +162,8 @@
               <div className="card-body">
                 <h5 className="card-title mb-1">{r.name}</h5>
                 <p className="mb-1"><small className="text-muted">{r.speciality}</small></p>
-                <p className="mb-1">â­ {r.rating} Â· {r.priceLevel} Â· {r.treatmentTypes.join(', ')}</p>
-                <p className="mb-1">Distance: <strong>{r.distance != null ? r.distance + ' km' : 'â€”'}</strong></p>
+                <p className="mb-1">⭐ {r.rating} · {r.priceLevel} · {r.treatmentTypes.join(', ')}</p>
+                <p className="mb-1">Distance: <strong>{r.distance != null ? r.distance + ' km' : '—'}</strong></p>
                 <div>
                   <button className="btn btn-sm btn-primary me-2" onClick={() => onOpen(r)}>Details</button>
                   <a className="btn btn-outline-secondary btn-sm" target="_blank" rel="noreferrer"
@@ -200,7 +200,7 @@
         Clinics.forEach(r => {
           if (!r.lat || !r.lng) return;
           const marker = L.marker([r.lat, r.lng]);
-          marker.bindPopup(`<strong>${r.name}</strong><br/>â­ ${r.rating} Â· ${r.priceLevel}<br/>${r.distance ?? 'â€”'} km`);
+          marker.bindPopup(`<strong>${r.name}</strong><br/>⭐ ${r.rating} · ${r.priceLevel}<br/>${r.distance ?? '—'} km`);
           markersRef.current.addLayer(marker);
           bounds.push([r.lat, r.lng]);
         });
@@ -268,7 +268,7 @@
           })
           .catch(err => {
             console.error(err);
-            alert('Could not load Clinics.json â€” check console.');
+            alert('Could not load Clinics.json — check console.');
           });
       }, []);
 
@@ -352,11 +352,11 @@
               <p><strong>Contact:</strong> ${r.phone || 'N/A'}</p>
             </div>
             <div class="col-md-7">
-              <p><strong>Rating:</strong> â­ ${r.rating}</p>
+              <p><strong>Rating:</strong> ⭐ ${r.rating}</p>
               <p><strong>Price:</strong> ${r.priceLevel}</p>
               <p><strong>Treatments:</strong> ${r.treatmentTypes.join(', ')}</p>
-              <p><strong>Speciality:</strong> ${r.speciality || 'â€”'}</p>
-              <p><strong>Distance:</strong> ${r.distance != null ? r.distance + ' km' : 'â€”'}</p>
+              <p><strong>Speciality:</strong> ${r.speciality || '—'}</p>
+              <p><strong>Distance:</strong> ${r.distance != null ? r.distance + ' km' : '—'}</p>
               <p>${r.description || ''}</p>
               <a class="btn btn-primary" target="_blank" rel="noreferrer"
                  href="https://www.google.com/maps/dir/?api=1&destination=${r.lat},${r.lng}">Open in Maps</a>
@@ -412,7 +412,7 @@
           </div>
           <div className={`fab-wrapper ${fabOpen ? 'open' : ''}`}>
   <button className="fab-main" onClick={() => setFabOpen(o => !o)}>
-    {fabOpen ? "âœ–" : "â˜°"}
+    {fabOpen ? "✖" : "☰"}
   </button>
 
   <div className="fab-menu">
@@ -426,7 +426,7 @@
       <p>
         Dentistwalla is an aggregator platform dedicated to connecting patients with 
         trusted, pocket-friendly dental clinics. We believe quality dental care should 
-        be accessible to everyone â€” not just the top 5% of the population.
+        be accessible to everyone — not just the top 5% of the population.
       </p>
 
       <p>
@@ -439,7 +439,7 @@
 
       <h5>Our Vision</h5>
       <p>
-        To become Indiaâ€™s most trusted dental access platform by empowering clinics 
+        To become India’s most trusted dental access platform by empowering clinics 
         and enabling mass-population dental healthcare.
       </p>
 
@@ -453,7 +453,7 @@
     );
   }}
 >
-  â„¹ About Us
+  ℹ About Us
 </button>
 
 <button
@@ -481,12 +481,12 @@
     );
   }}
 >
-  ðŸ“ž Contact
+  📞 Contact
 </button>
 
 
-    <button className="fab-item" onClick={() => alert('Treatments')}>ðŸ¦· Treatments</button>
-    <button className="fab-item" onClick={() => alert('Paid Intership')}>ðŸ¦· Paid Internship</button>
+    <button className="fab-item" onClick={() => alert('Treatments')}>🦷 Treatments</button>
+    <button className="fab-item" onClick={() => alert('Paid Intership')}>🦷 Paid Internship</button>
   </div>
 </div>
 
