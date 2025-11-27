@@ -87,6 +87,66 @@
     value={search}
     onChange={(e) => setSearch(e.target.value)}
   />
+<div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active text-center p-5">
+      <h2>Current Services</h2>
+      <div class="d-flex justify-content-center gap-4 mt-4">
+
+        <!-- SVG service 1 -->
+        <div>
+          <svg width="50" height="50" fill="currentColor" class="bi bi-gear">
+            <use xlink:href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/bootstrap-icons.svg#gear"></use>
+          </svg>
+          <p>Service A</p>
+        </div>
+
+        <!-- SVG service 2 -->
+        <div>
+          <svg width="50" height="50" fill="currentColor" class="bi bi-lightning-fill">
+            <use xlink:href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/bootstrap-icons.svg#lightning-fill"></use>
+          </svg>
+          <p>Service B</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item text-center p-5">
+      <h2>Upcoming Services</h2>
+      <div class="d-flex justify-content-center gap-4 mt-4">
+
+        <!-- Future icon -->
+        <div>
+          <svg width="50" height="50" fill="currentColor" class="bi bi-rocket-fill">
+            <use xlink:href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/bootstrap-icons.svg#rocket-fill"></use>
+          </svg>
+          <p>Coming Soon</p>
+        </div>
+
+        <div>
+          <svg width="50" height="50" fill="currentColor" class="bi bi-stars">
+            <use xlink:href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/bootstrap-icons.svg#stars"></use>
+          </svg>
+          <p>New Feature</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
 
   {search && (
     <button
