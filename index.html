@@ -13,6 +13,9 @@
 
   <!-- Local CSS -->
   <link rel="stylesheet" href="./styles.css" />
+  <meta name="title" content="DentistWalla - Best Dental Clinic & Cosmetic Care" />
+<meta name="description" content="DentistWalla offers dental cleaning, whitening, braces, implants, and cosmetic treatments. Hydrafacial coming soon. Book your appointment today." />
+<meta name="keywords" content="Dentist, Dental Clinic, Teeth Cleaning, Whitening, Braces, Dental Implants, Hydrafacial" />
 </head>
 <body>
   <div id="root"></div>
@@ -337,6 +340,54 @@
         setSortBy('best');
       }
 
+      const Carousel = () => {
+  return (
+    <div id="myCarousel"
+      className="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+    >
+      <div className="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" className="active"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+      </div>
+
+      <div className="carousel-inner">
+
+        <div className="carousel-item active">
+          <div
+            className="d-flex justify-content-center align-items-center flex-column"
+            style={{ height: "300px", background: "#f2f2f2" }}
+          >
+            <h2>Services Available</h2>
+            <p>Cleaning • Whitening • Braces • Implants</p>
+          </div>
+        </div>
+
+        <div className="carousel-item">
+          <div
+            className="d-flex justify-content-center align-items-center flex-column"
+            style={{ height: "300px", background: "#e5f7ff" }}
+          >
+            <h2>Hydrafacial Coming Soon</h2>
+            <p>Launching in 2025</p>
+          </div>
+        </div>
+
+      </div>
+
+      <button className="carousel-control-prev" type="button"
+        data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span className="carousel-control-prev-icon"></span>
+      </button>
+      <button className="carousel-control-next" type="button"
+        data-bs-target="#myCarousel" data-bs-slide="next">
+        <span className="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  );
+};
+
       // Open details modal
       function openDetails(r) {
         setHighlightId(r.id);
@@ -393,6 +444,7 @@
             />
 
             <div className="row">
+              <Carousel/>
   <h5 className="mb-3">Results ({sorted.length})</h5>
 
   {sorted.length === 0 && (
