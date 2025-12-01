@@ -80,7 +80,7 @@
         <div className="card mb-3">
           <div className="card-body">
             <div className="row g-2 align-items-center">
-                <div className="col-12 col-md-4 position-relative">
+                <div className="col-12 col-md-12 position-relative">
   <input
     className="form-control pe-5"
     placeholder="Search Clinic/Area/Treatment..."
@@ -393,15 +393,19 @@
             />
 
             <div className="row">
-              <div className="col-md-6">
-                <h5 className="mb-3">Results ({sorted.length})</h5>
-                {sorted.length === 0 && <div className="alert alert-warning">No Clinics match current filters.</div>}
-                {sorted.map(r => (
-                  <div key={r.id}>
-                    <ClinicCard r={r} onOpen={openDetails}/>
-                  </div>
-                ))}
-              </div>
+  <h5 className="mb-3">Results ({sorted.length})</h5>
+
+  {sorted.length === 0 && (
+    <div className="alert alert-warning">No Clinics match current filters.</div>
+  )}
+
+  {sorted.map(r => (
+    <div key={r.id} className="col-12 col-md-6 col-lg-4 mb-3">
+      <ClinicCard r={r} onOpen={openDetails} />
+    </div>
+  ))}
+
+
 
         {/*     <div className="col-md-6">
                 <h5 className="mb-3">Map</h5>
