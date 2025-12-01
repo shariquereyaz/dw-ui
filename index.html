@@ -161,8 +161,8 @@
             <div className="col-8">
               <div className="card-body">
                 <h5 className="card-title mb-1">{r.name}</h5>
-                <p className="mb-1"><small className="text-muted">{r.speciality}</small></p>
-                <p className="mb-1">⭐ {r.rating} · {r.priceLevel} · {r.treatmentTypes.join(', ')}</p>
+                <p className="mb-1"><small className="text-muted">{r.address}</small></p>
+                {/*<p className="mb-1">⭐ {r.rating} · {r.priceLevel} · {r.treatmentTypes.join(', ')}</p>*/}
                 <p className="mb-1">Distance: <strong>{r.distance != null ? r.distance + ' km' : '—'}</strong></p>
                 <div>
                   <button className="btn btn-sm btn-primary me-2" onClick={() => onOpen(r)}>Details</button>
@@ -249,7 +249,7 @@
       const [minRating, setMinRating] = useState('');
       const [mealFilter, setMealFilter] = useState('');
       const [maxDistance, setMaxDistance] = useState(10);
-      const [sortBy, setSortBy] = useState('best');
+      const [sortBy, setSortBy] = useState('name');
       const [userLocation, setUserLocation] = useState(null);
       const [dark, setDark] = useState(false);
       const [highlightId, setHighlightId] = useState(null);
@@ -352,7 +352,7 @@
               <p><strong>Contact:</strong> ${r.phone || 'N/A'}</p>
             </div>
             <div class="col-md-7">
-              <p><strong>Rating:</strong> ⭐ ${r.rating}</p>
+               
               <p><strong>Price:</strong> ${r.priceLevel}</p>
               <p><strong>Treatments:</strong> ${r.treatmentTypes.join(', ')}</p>
               <p><strong>Speciality:</strong> ${r.speciality || '—'}</p>
