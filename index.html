@@ -155,29 +155,45 @@
 
     /* ---------- Clinic Card & Modal Trigger ---------- */
     function ClinicCard({ r, onOpen }) {
-      return (
-        <div className="card mb-3 shadow-sm">
-          <div className="row g-0">
-            <div className="col-4">
-              <img src={r.img || 'https://via.placeholder.com/300x200?text=No+Image'} className="img-fluid rounded-start" alt={r.name}/>
-            </div>
-            <div className="col-8">
-              <div className="card-body">
-                <h5 className="card-title mb-1">{r.name}</h5>
-                <p className="mb-1"><small className="text-muted">{r.address}</small></p>
-                {/*<p className="mb-1">⭐ {r.rating} · {r.priceLevel} · {r.treatmentTypes.join(', ')}</p>*/}
-                <p className="mb-1">Distance: <strong>{r.distance != null ? r.distance + ' km' : '—'}</strong></p>
-                <div>
-                  <button className="btn btn-sm btn-primary me-2" onClick={() => onOpen(r)}>Details</button>
-                  <a className="btn btn-outline-secondary btn-sm" target="_blank" rel="noreferrer"
-                     href={`https://www.google.com/maps/dir/?api=1&destination=${r.lat},${r.lng}`}>Navigate</a>
-                </div>
-              </div>
-            </div>
-          </div>
+  return (
+    <div className="google-card shadow-sm">
+      <img
+        src={r.img || "https://via.placeholder.com/600x400?text=No+Image"}
+        className="google-card-img"
+        alt={r.name}
+      />
+
+      <div className="google-card-body">
+        <h5 className="google-card-title">{r.name}</h5>
+
+        <p className="google-card-address">{r.address}</p>
+
+        <p className="google-card-distance">
+          Distance: <strong>{r.distance != null ? r.distance + " km" : "—"}</strong>
+        </p>
+
+        <div className="google-card-actions">
+          <button
+            className="btn btn-primary btn-sm me-2"
+            onClick={() => onOpen(r)}
+          >
+            Details
+          </button>
+
+          <a
+            className="btn btn-outline-secondary btn-sm"
+            target="_blank"
+            rel="noreferrer"
+            href={`https://www.google.com/maps/dir/?api=1&destination=${r.lat},${r.lng}`}
+          >
+            Navigate
+          </a>
         </div>
-      );
-    }
+      </div>
+    </div>
+  );
+}
+
 
     /* ---------- Map Component (Leaflet) ---------- */
     function MapView({ Clinics, userLocation, highlightId }) {
