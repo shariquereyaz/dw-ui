@@ -68,5 +68,33 @@
     "phone": "+91-612-0000005",
     "img": "https://picsum.photos/seed/alpha2/200",
     "description": "Best Clinic in Darbhanga."
+  },
+  {
+    "id": 6,
+    "name": "Face and Jaw Clinic",
+    "speciality": "Dr. (Prof.) Waqar Imam ",
+    "rating": 4.6,
+    "treatmentTypes": ["Oral and Maxillofacial Surgery", "Dental Check-up"],
+    "priceLevel": "₹",
+    "lat": 25.6170,
+    "lng": 85.1350,
+    "address": "Khatupur ,NH-31 Begusarai 857101",
+    "phone": "+91-612-0000006",
+    "img": "https://picsum.photos/seed/alpha4/200",
+    "description": "Best Clinic in Begusarai."
+  },
+  {
+    "id": 7,
+    "name": " Huda Dental Care",
+    "speciality": "Dr Minhaj Anwer",
+    "rating": 4.6,
+    "treatmentTypes": ["Oral and Maxillofacial Surgery", "Dental Check-up"],
+    "priceLevel": "₹",
+    "lat": 25.6170,
+    "lng": 85.1350,
+    "address": "Mohiuddinpur , Bahadurganj Rd .Opposite Ex - Minister Munna Mushtaq, Kishanganj Bihar 855107",
+    "phone": "+91-612-0000006",
+    "img": "https://picsum.photos/seed/alpha5/200",
+    "description": "Best Clinic in Bahadurganj."
   }
 ]
