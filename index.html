@@ -610,8 +610,21 @@ function ClinicList({ loading, clinics }) {
 </button>
 
 
-    <button className="fab-item" onClick={() => alert('Treatments')}>🦷 Treatments</button>
-    <button className="fab-item" onClick={() => alert('Paid Intership')}>🦷 Paid Internship</button>
+    <button className="fab-item" onClick={() => {
+      setFabOpen(false);
+    openInfo(
+      "Treatments",
+      `<div class="modal-body">
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>RCT:</strong> ₹2000 - ₹3000 per tooth</li>
+            <li class="list-group-item"><strong>Crown (PFM):</strong> ₹2000 - ₹3000</li>
+            <li class="list-group-item"><strong>Extraction:</strong> Starting from ₹350 per tooth</li>
+            <li class="list-group-item"><strong>Basic Tooth Cleaning:</strong> ₹600 onwards</li>
+            <li class="list-group-item"><strong>Tooth Filling:</strong> ₹300 onwards</li>
+          </ul>
+        </div>`
+    );
+    }}>🦷 Treatments</button>
   </div>
 </div>
 
