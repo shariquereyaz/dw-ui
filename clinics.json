@@ -96,5 +96,20 @@
     "phone": "+91-612-0000006",
     "img": "https://picsum.photos/seed/alpha5/200",
     "description": "Best Clinic in Bahadurganj."
-  }
+  },
+{
+  "id": 8,
+  "name": "Dr Smile Dental Clinic",
+  "speciality": "General Dentistry",
+  "rating": null,
+  "treatmentTypes": ["Dental Check-up", "General Dentistry"],
+  "priceLevel": "₹",
+  "lat": 28.5960,
+  "lng": 77.0800,
+  "address": "Shop No. 3, A1A, Palam Dabri Road, Mahaveer Enclave, New Delhi",
+  "phone": "+91-9643628352",
+  "img": "https://picsum.photos/seed/drsmile/200",
+  "description": "Trusted dental clinic in Mahaveer Enclave, New Delhi."
+}
+
 ]
