@@ -356,8 +356,8 @@ function ClinicList({ loading, clinics }) {
           btn.disabled = true;
           btn.innerText = 'Locating...';
           navigator.geolocation.getCurrentPosition((pos) => {
-            const lat =19;// pos.coords.latitude;
-            const lng =72;// pos.coords.longitude;
+            const lat = pos.coords.latitude;
+            const lng = pos.coords.longitude;
             setUserLocation({ lat, lng });
             btn.innerText = 'Location set';
             btn.disabled = false;
@@ -386,7 +386,7 @@ function ClinicList({ loading, clinics }) {
         .filter(r => r.name.toLowerCase().includes(search.toLowerCase()) || (r.speciality && r.speciality.toLowerCase().includes(search.toLowerCase()))|| (r.address.toLowerCase().includes(search.toLowerCase())))
         .filter(r => minRating ? r.rating >= Number(minRating) : true)
         .filter(r => mealFilter ? r.treatmentTypes.includes(mealFilter) : true)
-        .filter(r => (r.distance != null) ? r.distance <= maxDistance : true);
+        .filter(r => (r.distance != null) ? r.distance <= 5:true);//maxDistance : true);
 
       // Sorting
       const sorted = [...filtered].sort((a, b) => {
