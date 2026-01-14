@@ -517,7 +517,7 @@ function ClinicList({ loading, clinics }) {
   <h5 className="mb-3">Results ({sorted.length})</h5>
 
   {sorted.length === 0 && (
-    <div className="alert alert-warning">No Clinics match current filters.</div>
+    <div className="alert alert-warning">No Clinics nearby. Please refresh to view all clinics.</div>
   )}
 
   {sorted.map(r => (
