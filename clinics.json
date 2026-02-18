@@ -109,7 +109,35 @@
   "address": "Shop No. 3, A1A, Palam Dabri Road, Mahaveer Enclave, New Delhi",
   "phone": "+91-9643628352",
   "img": "https://picsum.photos/seed/drsmile/200",
-  "description": "Trusted dental clinic in Mahaveer Enclave, New Delhi."
+  "description": "Trusted dental clinic in Mahaveer Enclave."
+},
+{
+  "id": 9,
+  "name": "Chaudhary Dental and Health Care",
+  "speciality": "General Dentistry",
+  "rating": null,
+  "treatmentTypes": ["Dental Check-up", "General Dentistry"],
+  "priceLevel": "₹",
+  "lat": 28.5960,
+  "lng": 77.0800,
+  "address": "Devi Chauraha, Maudaha,Hamirpur, Uttar Pradesh 210507",
+  "phone": "+91-9643628352",
+  "img": "https://picsum.photos/seed/drsmile9/200",
+  "description": "Trusted dental clinic in Hamirpur."
+},
+{
+  "id": 10,
+  "name": "Human Health and Dental Care",
+  "speciality": "General Dentistry",
+  "rating": null,
+  "treatmentTypes": ["Dental Check-up", "General Dentistry"],
+  "priceLevel": "₹",
+  "lat": 28.5960,
+  "lng": 77.0800,
+  "address": "96/26A Colonel Ganj Kanpur, Uttar Pradesh 208001",
+  "phone": "+91-9643628352",
+  "img": "https://picsum.photos/seed/drsmile10/200",
+  "description": "Trusted dental clinic in Kanpur."
 }
 
 ]
