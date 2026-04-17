@@ -138,6 +138,20 @@
   "phone": "+91-9643628352",
   "img": "https://picsum.photos/seed/drsmile10/200",
   "description": "Trusted dental clinic in Kanpur."
-}
+},
+  {
+  "id": 11,
+  "name": "Aliza Dental Clinic",
+  "speciality": "General Dentistry",
+  "rating": null,
+  "treatmentTypes": ["Dental Check-up", "General Dentistry"],
+  "priceLevel": "₹",
+  "lat": 28.5960,
+  "lng": 77.0800,
+  "address": "Opposite Town Hall, Annada Chowk-825301",
+  "phone": "+91-9643628352",
+  "img": "https://picsum.photos/seed/drsmile11/200",
+  "description": "Trusted dental clinic in Hazaribagh."
+  }
 
 ]
