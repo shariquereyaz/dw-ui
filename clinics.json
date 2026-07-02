@@ -152,6 +152,20 @@
   "phone": "+91-9643628352",
   "img": "https://picsum.photos/seed/drsmile11/200",
   "description": "Trusted dental clinic in Hazaribagh."
+  },
+   {
+  "id": 12,
+  "name": "Dr. Choubey's Dental Care",
+  "speciality": "General Dentistry",
+  "rating": null,
+  "treatmentTypes": ["Dental Check-up", "General Dentistry"],
+  "priceLevel": "₹",
+  "lat": 28.5960,
+  "lng": 77.0800,
+  "address": "GS-01 Madhav Plaza , Jinsi road no-2, Near Huzrat Pull, Lashkar Gwalior, Madhya Pradesh 474001",
+  "phone": ["7415365632", "9045337367"],
+  "img": "https://picsum.photos/seed/drsmile12/200",
+  "description": "Trusted dental clinic in Gwalior."
   }
 
 ]
